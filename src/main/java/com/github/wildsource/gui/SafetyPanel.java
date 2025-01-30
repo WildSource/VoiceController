@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class SafetyPanel {
     private Logger logger = LoggerFactory.getLogger(SafetyPanel.class);
@@ -18,6 +19,7 @@ public class SafetyPanel {
     public SafetyPanel() {
         this.jPanel = new JPanel();
         this.jPanel.setLayout(new MigLayout());
+        this.jPanel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
         createComponents();
         loadComponents();
         logger.info("Safety Panel created");
