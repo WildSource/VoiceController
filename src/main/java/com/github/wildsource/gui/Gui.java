@@ -28,6 +28,7 @@ public class Gui {
     }
 
     private void addComponents() {
-        this.jFrame.add(new SafetyPanel().getjPanel());
+        this.jFrame.add(new SafetyPanel().getjPanel(), "wrap");
+        this.jFrame.add(new DictionnaryPickerPanel().getjPanel());
     }
 }
